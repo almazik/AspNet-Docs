@@ -66,7 +66,7 @@ Writing a handler for resource based authorization is not that much different to
 
 .. code-block:: c#
 
-  public class DocumentAuthorizationHandler : AuthorizationHandler<MyRequirement, Document>
+  public class DocumentAuthorizationHandler : AuthorizationHandler<OperationAuthorizationRequirement, Document>
   {
       protected override void Handle(AuthorizationContext context, 
                                      OperationAuthorizationRequirement requirement, 
